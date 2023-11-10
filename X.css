@@ -1,0 +1,182 @@
+/* Réinitialisation de la mise en page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'X';
+    src: url('/users/sulivanmoreau/app-favorites/X.ttf') format('ttf'),
+        
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul {
+display: flex;
+justify-content: space-evenly;
+width: 1000px;
+list-style-type :none
+}
+
+
+.nav-link {
+color: white;
+text-decoration: none; 
+transition: color 0.3s; 
+justify-content: space-around;
+}
+
+#spotify-link:hover {
+    color: #81b71a; /* Vert au survol */
+}
+
+#x-link:hover {
+    color: #000000; /* Noir au survol */
+}
+
+#lydia-link:hover {
+    color: #017CF7; /* Bleu au survol */
+}
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Styles pour le contenu principal */
+.content {
+    background-color: #000;
+    font-family: X ;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+h1 {
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'X';
+}
+
+/* Styles pour le logo Twitter (X) */
+.Fonction {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.X-logo {
+        width: 200px; /* Ajustez la largeur souhaitée */
+        height: auto; /* Laissez la hauteur s'ajuster automatiquement pour conserver les proportions de l'image */
+        margin: 0 10px; /* Ajoute un espacement horizontal entre les images (facultatif) */
+}
+.X_logo {
+    width: 300px;
+}
+/* Styles pour le slogan rebondissant */
+.slogan-container {
+    text-align: center;
+   
+}
+@keyframes color-change {
+    0% { color: white; }
+    25% { color: rgb(168, 165, 165); }
+    50% { color: gray; }
+    75% { color: rgb(68, 67, 67); }
+    100% { color: black; }
+}
+
+.color-changing-title {
+    animation: color-change 10s infinite;
+    font-size: 50px;
+}
+
+
+
+/* Styles pour les boutons de téléchargement */
+.download-buttons {
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.download-button:hover {
+    background-color: #111;
+}
+
+/* Styles pour les liens vers les réseaux sociaux */
+.social-links {
+    text-align: center;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour la liste des fonctionnalités */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/* Styles pour chaque fonctionnalité */
+.feature {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    transition: transform 0.3s;
+    width: 20%;
+    cursor: pointer;
+}
+.feature p {
+    color: grey;
+    font-size: 16px; /* Taille de police identique pour toutes les descriptions */
+    margin-top: 10px; /* Espacement entre le titre et la description */
+}
+
+
+/* Grossissement des fonctionnalités au survol */
+.feature:hover {
+    transform: scale(1.05);
+}

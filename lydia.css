@@ -1,0 +1,205 @@
+/* Réinitialisation de la mise en page */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family:Stora;
+    src: url(/users/sulivanmoreau/app-favorites/Market_Deco.ttf);
+}
+    @font-face {
+        font-family:Cinzel;
+        src: url(/users/sulivanmoreau/app-favorites/Cinzel.otf);
+
+            }
+        @font-face {
+            font-family: 'Cameron';
+            src: url('/users/sulivanmoreau/app-favorites/Cameron.ttf') format('ttf'),
+                
+        }
+    
+
+header {
+        background-color: #00A9E0;
+        display: flex;
+        height: 60px;
+        justify-content: center;
+        align-items: center;
+}
+
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    width: 1000px;
+    list-style-type :none
+}
+
+
+.nav-link {
+    color: white;
+    text-decoration: none; 
+    transition: color 0.3s; 
+    justify-content: space-around;
+}
+
+
+#spotify-link:hover {
+color: #81b71a; /* Vert au survol */
+}
+
+#x-link:hover {
+color: #000000; /* Noir au survol */
+}
+
+#lydia-link:hover {
+color: #017CF7; /* Bleu au survol */
+}
+
+
+/* Styles pour le corps de la page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #00A9E0;
+    color: #00A9E0;
+    text-align: center;
+    padding: 20px;
+}
+.logo {
+    width: 30%; /* Ajustez la largeur souhaitée */
+    height: auto; /* Laissez la hauteur s'ajuster automatiquement pour conserver les proportions de l'image */
+    margin: 0 10px; /* Ajoute un espacement horizontal entre les images (facultatif) */
+}
+
+.Lydia-logo {
+    display: flex;
+    width: 300px;
+    height: auto;
+    justify-content: center;
+    margin: 20px auto;
+    border-radius: 10px;
+
+}
+
+/* Styles pour le contenu principal */
+.content {
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+h1 {
+    color: #00A9E0;
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-family: "Cameron";
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    font-family: "Cameron";
+}
+
+p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: "Cameron";
+}
+
+
+/* Style pour le conteneur de slogan */
+.slogan-container {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* Style pour le titre de fonctionnalité */
+.feature-title {
+    font-size: 50px;
+    font-weight: bold;
+    color: #00A9E0;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative; /* Ajout d'une position relative pour positionner l'élément absolu */
+}
+
+/* Styles pour le logo Twitter (X) */
+.Fonction {
+    display: flex;
+    justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.Lydia-logo {
+        width: 200px; /* Ajustez la largeur souhaitée */
+        height: auto; /* Laissez la hauteur s'ajuster automatiquement pour conserver les proportions de l'image */
+        margin: 0 10px; /* Ajoute un espacement horizontal entre les images (facultatif) */
+}
+
+/* Styles pour les boutons de téléchargement */
+.download-buttons {
+    text-align: center;
+}
+
+.download-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #00A9E0;
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+.download-button:hover {
+    background-color: #007EA7;
+}
+
+/* Styles pour les liens vers les réseaux sociaux */
+.social-links {
+    text-align: center;
+}
+
+.social-link {
+    color: white;
+    font-size: 20px;
+    margin: 10px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.social-link:hover {
+    text-decoration: underline;
+}
+/* Styles pour la liste des fonctionnalités */
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+}
+
+/* Styles pour chaque fonctionnalité */
+.feature {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #e3e3e3;
+    transition: transform 0.3s;
+    width: 20%;
+    cursor: pointer;
+}
+.feature p {
+    color: gray;
+    font-size: 16px; /* Taille de police identique pour toutes les descriptions */
+    margin-top: 10px; /* Espacement entre le titre et la description */
+}
+
+
+/* Grossissement des fonctionnalités au survol */
+.feature:hover {
+    transform: scale(1.05);
+}
