@@ -1,40 +1,41 @@
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
+
+/* Polices */
 @font-face {
-    font-family:Stora;
-    src: url(/users/sulivanmoreau/app-favorites/Market_Deco.ttf);
+    font-family: Stora;
+    src: url(Market_Deco.ttf);
 }
-    @font-face {
-        font-family:Cinzel;
-        src: url(/users/sulivanmoreau/app-favorites/Cinzel.otf);
-    }
 
+@font-face {
+    font-family: Cinzel;
+    src: url(Cinzel.otf);
+}
+
+/* Haut de page */
 header {
-        background-color: black;
-        display: flex;
-        height: 60px;
-        justify-content: center;
-        align-items: center;
+    background-color: black;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
 }
-
 
 ul {
     display: flex;
     justify-content: space-evenly;
     width: 1000px;
-    list-style-type :none
+    list-style-type: none;
 }
-
 
 .nav-link {
     color: white;
-    text-decoration: none; 
-    transition: color 0.3s; 
+    text-decoration: none;
+    transition: color 0.3s;
     justify-content: space-around;
 }
 
@@ -50,27 +51,29 @@ ul {
     color: #017CF7; /* Bleu au survol */
 }
 
-body{
+/* Corps */
+body {
     background-color: white;
 }
-#presentation{
-    background-image: url(/users/sulivanmoreau/app-favorites/fonds.jpg);
-    background-size: cover; 
-    background-position: center center; 
+
+#presentation {
+    background-image: url(fonds.jpg);
+    background-size: cover;
+    background-position: center center;
     position: relative;
-    height: 300px; 
+    height: 300px;
     margin: 10px;
 }
 
 #presentation h1 {
-    
-        color: white;
-        font-family: 'Stora';
-        font-size: 75px;
-        position: absolute;
-        top: 25%; 
-        left: 15%; 
+    color: white;
+    font-family: 'Stora';
+    font-size: 75px;
+    position: absolute;
+    top: 25%;
+    left: 15%;
 }
+
 #app {
     margin: 0px;
     display: flex;
@@ -85,30 +88,24 @@ body{
     text-align: center;
 }
 
-
-#app img{
-    width: 100px; /* Définissez la largeur souhaitée pour toutes les images */
-    height: 100px; /* Définissez la hauteur souhaitée pour toutes les images */
+#app img {
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    margin-bottom: 10px; /* Ajoute un espace entre l'image et le titre */
+    margin-bottom: 10px;
 }
-
-
-
 
 #app h1 {
     font-family: 'Cinzel';
-    font-size: 10px; 
+    font-size: 10px;
     color: #0f0e0e;
 }
- 
-
 
 .logo a:hover img {
     opacity: 0.5; /* Assombrit l'image au survol */
 }
 
-
+/* Pied de page */
 footer {
     background-color: black;
     display: flex;
